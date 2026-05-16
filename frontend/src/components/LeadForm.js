@@ -43,7 +43,17 @@ function LeadForm({ onSubmit, initialData, onCancel }) {
         </label>
         <label>
           Source
-          <input name="source" value={form.source} onChange={handleChange} />
+          {/* <input name="source" value={form.source} onChange={handleChange} /> */}
+             {/* <select name="source" value={form.source} onChange={handleChange}> */}
+             <select>
+              <option value="">Select Source</option>
+             <option>Website</option>
+             <option>Facebook</option>
+             <option>Instagram</option>
+             <option>Referral</option>
+             <option>WhatsApp</option>
+             <option>LinkedIn</option>
+              </select>
         </label>
         <label>
           Status
